@@ -20,6 +20,7 @@ p{
 img{
     display: block;
     margin: auto;
+    max-width: 20%;
 }
 div {
     padding-right: 30px;
