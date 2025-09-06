@@ -30,3 +30,7 @@ div {
   margin-right: auto;
   width: 50%;
 }
+
+.image-container {
+    text-align: center;
+}
