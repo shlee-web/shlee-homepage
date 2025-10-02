@@ -1,0 +1,649 @@
+*{
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+}
+body{
+    margin: 0;
+    font-family: "SUSE Mono", monospace;
+}
+
+.background{
+    background-image: url(images/background.jpg);
+    background-size: cover;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.fish-1{
+    background-image: url(images/tripletail-wrasse.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: inline-block; /**hover**/
+    cursor: pointer; /**hover**/ 
+    width: 7%;
+    height: 7%;
+   animation: swim-1 30s infinite linear;
+}
+/**hover**/ 
+.popup-textbox {
+  display: none; 
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background-color: rgb(236, 117, 6);
+  color: navy;
+  padding: 8px;
+  border-radius: 4px;
+  z-index: 1; 
+  white-space: nowrap; 
+}
+/**hover**/ 
+.fish-1:hover .popup-textbox {
+  display: block; 
+}
+/**hover**/ 
+@keyframes swim-1{
+    
+    0%{
+        left: -10%;
+        transform: translateY(0px);
+
+    }
+     50%{
+        transform: translateY(-100px);
+     }
+    100%{
+        left: 110%;
+    }
+}
+
+.fish-2{
+    background-image: url(images/forstens-parrotfish.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 10%;
+    height: 5%;
+    animation: swim-2 15s infinite linear;
+}
+/**hover**/ 
+.fish-2:hover .popup-textbox {
+  display: block; 
+}
+/**hover**/ 
+
+@keyframes swim-2{
+    
+    0%{
+        left: -5%;
+        transform: translateY(0px);
+
+    }
+     50%{
+        transform: translateY(-200px);
+     }
+     75%{
+        transform: translateY(-90px); 
+     }
+    100%{
+        left: 110%;
+    }
+}
+
+.fish-3{
+    background-image: url(images/white-spotted-red-snapper.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 10%;
+    height: 8%;
+    position: absolute;
+    animation: swim-3 10s infinite linear;
+    bottom: 0;
+}
+/**hover**/ 
+.fish-3:hover .popup-textbox {
+  display: block; 
+}
+/**hover**/ 
+@keyframes swim-3{
+    
+    0%{
+        left: -10%;
+        transform: translateY(0px);
+
+    }
+     50%{
+        transform: translateY(-100px);
+     }
+
+    100%{
+        left: 110%;
+    }
+}
+
+
+.fish-4{
+    background-image: url(images/indo-pacific-sailfish.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 50%;
+    height: 45%;
+    animation: swim-4 8s infinite linear;
+    top: 0;
+}
+/**hover**/ 
+.fish-4:hover .popup-textbox {
+  display: block; 
+}
+/**hover**/ 
+@keyframes swim-4{
+    
+    0%{
+        top: -50%;
+        left: 0%;
+        transform: translateY(0px);
+
+    }
+     50%{
+        transform: translateY(750px);
+     }
+
+    100%{
+        left: 100%;
+        transform: translateY(500px);
+    }
+}
+
+.fish-5{
+    background-image: url(images/silvertip-shark.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 20%;
+    position: absolute;
+    animation: swim-5 20s infinite linear;
+    top: 0;
+}
+/**hover**/ 
+.fish-5:hover .popup-textbox {
+  display: block; 
+}
+/**hover**/ 
+@keyframes swim-5{
+    
+    0%{
+        left: -100%;
+
+    }
+
+    100%{
+        left: 110%;
+    }
+}
+
+.fish-6{
+    background-image: url(images/panther-fish.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 8%;
+    height: 8%;
+    position: absolute;
+    animation: swim-6 13s infinite linear;
+    top: 75%;
+}
+/**hover**/ 
+.fish-6:hover .popup-textbox {
+  display: block; 
+}
+/**hover**/ 
+@keyframes swim-6{
+    
+    0%{
+        right: -10%;
+
+    }
+
+    100%{
+        right: 110%;
+    }
+}
+
+.fish-7{
+    position: absolute;
+    width: 15%;
+    height: 8%;
+    animation: swim-7 35s infinite linear;
+    top: 30%;
+}
+/**hover**/ 
+.fish-7:hover .popup-textbox {
+  display: block; 
+}
+/**hover**/ 
+@keyframes swim-7{
+    
+    0%{
+    right: -10%;
+    background-image: url(images/lapu-lapu-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    }
+
+    50%{
+    background-image: url(images/lapu-lapu-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+        right: 101%;
+    }
+
+    51%{
+    background-image: url(images/lapu-lapu-2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+        right: 100%;
+
+    }
+
+    100%{
+    background-image: url(images/lapu-lapu-2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+        right: 0%;
+
+    }
+}
+
+
+.fish-8{
+    background-image: url(images/violet-striped-maori-wrasse.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 8%;
+    height: 8%;
+    position: absolute;
+    animation: swim-8 17s infinite linear;
+    top: 40%;
+}
+/**hover**/ 
+.fish-8:hover .popup-textbox {
+  display: block; 
+}
+/**hover**/ 
+@keyframes swim-8{
+    
+    0%{
+        right: -10%;
+
+    }
+
+    100%{
+        right: 110%;
+    }
+}
+
+.fish-9{
+    position: absolute;
+    width: 15%;
+    height: 10%;
+    animation: swim-9 45s infinite linear;
+    top: 60%;
+}
+/**hover**/ 
+.fish-9:hover .popup-textbox {
+  display: block; 
+}
+/**hover**/ 
+@keyframes swim-9{
+    
+    0%{
+    right: -10%;
+    background-image: url(images/bluering-angelfish-2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    }
+
+    50%{
+    background-image: url(images/bluering-angelfish-2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+        right: 101%;
+    }
+
+    51%{
+    background-image: url(images/bluering-angelfish-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+        right: 100%;
+
+    }
+
+    100%{
+    background-image: url(images/bluering-angelfish-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+        right: 0%;
+
+    }
+}
+
+
+.fish-10{
+    background-image: url(images/emperor-angelfish.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 8%;
+    height: 8%;
+    position: absolute;
+    animation: swim-10 20s infinite linear;
+    top: 80%;
+}
+/**hover**/ 
+.fish-10:hover .popup-textbox {
+  display: block; 
+}
+/**hover**/ 
+@keyframes swim-10{
+    
+    0%{
+        right: -10%;
+
+    }
+
+    100%{
+        right: 110%;
+    }
+}
+
+.fish-11{
+    background-image: url(images/whaleshark.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 10%;
+    position: absolute;
+    animation: swim-11 55s infinite linear;
+    top: 10%;
+}
+/**hover**/ 
+.fish-11:hover .popup-textbox {
+  display: block; 
+}
+/**hover**/ 
+@keyframes swim-11{
+    
+    0%{
+        left: -100%;
+
+    }
+
+    100%{
+        left: 110%;
+        transform: translateY(-150px);
+    }
+}
+
+.fish-12{
+    background-image: url(images/bluespine-unicornfish.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15%;
+    height: 9%;
+    position: absolute;
+    animation: swim-12 17s infinite linear;
+    top: 80%;
+}
+/**hover**/ 
+.fish-12:hover .popup-textbox {
+  display: block; 
+}
+/**hover**/ 
+@keyframes swim-12{
+    
+    0%{
+        left: -10%;
+        transform: translateY(0px);
+
+    }
+     50%{
+        transform: translateY(-100px);
+     }
+
+    100%{
+        left: 110%;
+        transform: translateY(-150px);
+    }
+}
+
+.fish-13{
+    background-image: url(images/undulate-triggerfish.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    animation: swim-13 27s infinite linear;
+    top: 80%;
+}
+/**hover**/ 
+.fish-13:hover .popup-textbox {
+  display: block; 
+}
+/**hover**/ 
+@keyframes swim-13{
+    
+    0%{
+        right: -10%;
+
+    }
+
+    100%{
+        right: 110%;
+    }
+}
+
+.fish-14{
+    background-image: url(images/black-streak-surgeonfish.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    animation: swim-14 30s infinite linear;
+    top: 65%;
+}
+/**hover**/ 
+.fish-14:hover .popup-textbox {
+  display: block; 
+}
+/**hover**/ 
+@keyframes swim-14{
+    
+    0%{
+        left: -10%;
+
+    }
+
+    100%{
+        left: 110%;
+        transform: translateY(100px);
+    }
+}
+
+.fish-15{
+    background-image: url(images/orange-dotted-tuskfish.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: inline-block; /**hover**/
+    cursor: pointer; /**hover**/ 
+    width: 7%;
+    height: 7%;
+   animation: swim-15 25s infinite linear;
+   top:58%;
+}
+
+.fish-15:hover .popup-textbox {
+  display: block; 
+}
+/**hover**/ 
+@keyframes swim-15{
+    
+    0%{
+        left: -10%;
+        transform: translateY(0px);
+
+    }
+     50%{
+        transform: translateY(-100px);
+     }
+    100%{
+        left: 110%;
+    }
+}
+
+.fish-16{
+    background-image: url(images/maya-maya.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 10%;
+    position: absolute;
+    animation: swim-16 15s infinite linear;
+    top: 15%;
+}
+/**hover**/ 
+.fish-16:hover .popup-textbox {
+  display: block; 
+}
+/**hover**/ 
+@keyframes swim-16{
+    
+    0%{
+        right: -25%;
+
+    }
+
+    100%{
+        right: 110%;
+    }
+}
+
+.fish-17{
+    background-image: url(images/leopard-coral-grouper.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 18%;
+    height: 10%;
+    position: absolute;
+    animation: swim-17 18s infinite linear;
+    top: 20%;
+}
+/**hover**/ 
+.fish-17:hover .popup-textbox {
+  display: block; 
+}
+/**hover**/ 
+@keyframes swim-17{
+    
+    0%{
+        right: -25%;
+
+    }
+
+    100%{
+        right: 110%;
+    }
+}
+
+.fish-18{
+    background-image: url(images/freckled-goatfish.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 5%;
+    height: 5%;
+    position: absolute;
+    animation: swim-18 28s infinite linear;
+    top: 5%;
+}
+/**hover**/ 
+.fish-18:hover .popup-textbox {
+  display: block; 
+}
+/**hover**/ 
+@keyframes swim-18{
+    
+    0%{
+        right: -25%;
+
+    }
+
+    100%{
+        right: 110%;
+    }
+}
+
+.fish-19{
+    background-image: url(images/sawtooth-barracuda.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15%;
+    height: 10%;
+    position: absolute;
+    animation: swim-19 5s infinite linear;
+    top: 35%;
+}
+/**hover**/ 
+.fish-19:hover .popup-textbox {
+  display: block; 
+}
+/**hover**/ 
+@keyframes swim-19{
+    
+    0%{
+        right: -25%;
+
+    }
+
+    100%{
+        right: 110%;
+    }
+}
+
+.fish-20{
+    background-image: url(images/scalloped-hammerhead-shark.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 10%;
+    height: 5%;
+    position: absolute;
+    animation: swim-20 35s infinite linear;
+    top: 0;
+}
+/**hover**/ 
+.fish-20:hover .popup-textbox {
+  display: block; 
+}
+/**hover**/ 
+@keyframes swim-20{
+    
+    0%{
+        right: -25%;
+
+    }
+
+    100%{
+        right: 110%;
+    }
+}
