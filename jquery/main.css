@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+}
+body {
+    margin: 0;
+    background: lightcyan;
+    transition: background .3s;
+
+}
+
+body.dark {
+    background: rgb(7, 7, 37);
+
+}
+.button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+
+}
+.container {
+    height: 100vh;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: lightskyblue;
+    transition: background .3s;
+    animation: spin 5s linear infinite;
+    animation-play-state: paused;
+}
+
+.box.dark {
+    background: rgb(15, 15, 78);
+}
+
+.box.spin{
+    animation-play-state: running;
+}
+
+@keyframes spin {
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+
+.swordfish{
+    width: 500px;
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    display: none;
+
+}
+
+.reveal{
+    display: block;
+
+}

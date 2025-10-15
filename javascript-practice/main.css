@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+}
+
+body{
+    background: lightgoldenrodyellow;
+}
+
+.dark{
+    background: rgb(46, 42, 42);
+}
+
+.menu{
+    background: lightblue;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    padding: 20px;
+    width: 200px;
+    height: 100vh;
+    text-align: center;
+    font-size: 150%;
+
+    transition: all .3s;
+}
+
+
+.active{
+    right: 0;
+}
+
+.gear{
+    width: 100px;
+    height: 100px;
+    background: pink;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    transition: all .3s;
+}
+
+.spin{
+    rotate: 180deg;
+}
+
+.glow{
+    background-color: lightgrey;
+}
