@@ -1,0 +1,277 @@
+*{
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+}
+/*
+COLOR PALETTE
+
+dark vanilla - dec0ae
+
+parrot pink - d4949d
+
+liberty - 5c63a4
+
+lavender purple - 8b7fac
+
+cadet blue - acb0cc
+*/
+
+.rammetto-one-regular {
+    font-family: "Rammetto One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #3C123B;
+}
+
+.jua-regular {
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #3C123B;
+}
+
+
+body{
+    margin: 0;
+    overflow: hidden;
+}
+.header{
+    position: absolute;
+    height: 10%;
+    top: 6%;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: mover 30s linear infinite;
+}
+
+@keyframes mover {
+
+    0% {
+        left: -50%;
+    }
+    
+    100% {
+        left: 150%;
+    }
+}
+
+
+.container{
+    background-image: url(assets/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
+    display: flex;
+    height: 100vh;
+    gap: 15px;
+    align-items: center;
+}
+
+
+.left{
+    background: #d4949d;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    height: 80%;
+    padding: 10px;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+
+}
+
+.accessories{
+    background: #dec0ae;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40%;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+}
+
+
+.accessory-1{
+    background-image: url(assets/accessory-1.png);
+    width: 36%;
+    height: 16%;
+    background-repeat: no-repeat;
+}
+
+.accessory-2{
+    background-image: url(assets/accessory-2.png);
+    width: 33%;
+    height: 17%;
+    background-repeat: no-repeat;
+}
+
+.accessory-3{
+    background-image: url(assets/accessory-3.png);
+    width: 35%;
+    height: 16%;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+.shoes{
+    background: #dec0ae;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40%;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.shoes-1{
+    background-image: url(assets/shoes-1.png);
+    background-repeat: no-repeat;
+    width: 36%;
+    height: 20%;
+}
+
+.shoes-2{
+    background-image: url(assets/shoes-2.png);
+    background-repeat: no-repeat;
+    width: 36%;
+    height: 20%;
+}
+
+.shoes-3{
+    background-image: url(assets/shoes-3.png);
+    background-repeat: no-repeat;
+    width: 36%;
+    height: 20%;
+}
+
+
+.center{
+    background: #acb0cc;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    height: 80%;
+    border-radius: 20px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro{
+    position: relative;
+    top: -50px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.doll{
+
+    background-image: url(assets/doll.png);
+    top: 8%;
+    height: 60%;
+    width: 52%;
+    background-repeat: no-repeat;
+}
+
+.reset{
+    background: #dec0ae;
+    position: relative;
+    height: 100%;
+    width: 90%;
+    bottom: 50px;
+    font-size: 25px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+
+
+
+.right{
+    background: #d4949d;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    height: 80%;
+    padding: 10px;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+.tops{
+    background: #dec0ae;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40%;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.top-1{
+    background-image: url(assets/top-1.png);
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 23%;
+}
+
+.top-2{
+    background-image: url(assets/top-2.png);
+    background-repeat: no-repeat;
+    width: 35%;
+    height: 27%;
+}
+
+.top-3{
+    background-image: url(assets/top-3.png);
+    background-repeat: no-repeat;
+    width: 33%;
+    height: 25%;
+}
+
+
+
+
+.bottoms{
+    background: #dec0ae;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40%;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.bottom-1{
+    background-image: url(assets/bottom-1.png);
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 20%;
+}
+
+.bottom-2{
+    background-image: url(assets/bottom-2.png);
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 20%;
+}
+
+.bottom-3{
+    background-image: url(assets/bottom-3.png);
+    background-repeat: no-repeat;
+    width: 31%;
+    height: 23%;
+}
